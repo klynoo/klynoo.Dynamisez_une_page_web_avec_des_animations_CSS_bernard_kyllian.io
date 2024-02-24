@@ -1,0 +1,17 @@
+{
+  "name": "bernard_kyllian_1_repository_022024",
+  "description": "��#\u0000 \u0000D\u0000y\u0000n\u0000a\u0000m\u0000i\u0000s\u0000e\u0000z\u0000_\u0000u\u0000n\u0000e\u0000_\u0000p\u0000a\u0000g\u0000e\u0000_\u0000w\u0000e\u0000b\u0000_\u0000a\u0000v\u0000e\u0000c\u0000_\u0000d\u0000e\u0000s\u0000_\u0000a\u0000n\u0000i\u0000m\u0000a\u0000t\u0000i\u0000o\u0000n\u0000s\u0000_\u0000C\u0000S\u0000S\u0000_\u0000b\u0000e\u0000r\u0000n\u0000a\u0000r\u0000d\u0000_\u0000k\u0000y\u0000l\u0000l\u0000i\u0000a\u0000n\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "restaurantAcceuil.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o css/ --indented-syntax",
+    "start": "nodemon -e sass -x \"npm run sass\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0",
+    "sass": "^1.71.1"
+  }
+}

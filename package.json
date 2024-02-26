@@ -4,13 +4,12 @@
   "version": "1.0.0",
   "main": "restaurantAcceuil.js",
   "scripts": {
-    "sass": "node-sass -w sass/ -o css/ --indented-syntax",
-    "start": "nodemon -e sass -x \"npm run sass\""
+    "scss": "sass --watch scss/:css/",
+    "start": "nodemon -e sass -x \"npm run scss\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^9.0.0",
     "nodemon": "^3.1.0",
     "sass": "^1.71.1"
   }

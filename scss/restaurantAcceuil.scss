@@ -7,6 +7,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -20,6 +25,14 @@ h2 {
   padding: 0;
   font-family: Roboto;
   font-size: 18px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 300;
 }
 
 h4 {
@@ -73,6 +86,7 @@ h4 {
   flex-direction: column;
   padding: 0px 35px;
   text-align: center;
+  background-color: #f6f6f6;
   gap: 1rem;
 
   &__title {
@@ -83,6 +97,146 @@ h4 {
     h2 {
       color: rgba(53, 53, 53, 1);
       font-weight: 300;
+    }
+  }
+
+  &__container {
+    padding: 11px 0px 57px;
+    &__button {
+      padding: 13px 19px;
+    }
+  }
+}
+
+.description {
+  @include all-center;
+  flex-direction: column;
+  gap: 26px;
+  margin: 0px 20px 0px 10px;
+
+  &__title {
+    position: relative;
+    left: 20px;
+    width: 100%;
+    padding-top: 48px;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+
+    &__card {
+      display: flex;
+      align-items: center;
+
+      &__number {
+        @include all-center;
+        position: relative;
+        left: 10px;
+        min-width: 24px;
+        min-height: 24px;
+        background-color: #9356dc;
+        border-radius: 50%;
+
+        & p {
+          font-size: 14.182px;
+          font-weight: 500;
+          color: white;
+        }
+      }
+
+      &__container {
+        @include all-center;
+        display: flex;
+        width: 100%;
+        padding: 29px;
+        gap: 27px;
+        border-radius: 20px;
+        background-color: #f6f6f6;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+        &__icon {
+          color: rgba(126, 126, 126, 1);
+        }
+
+        &__icon--color {
+          color: rgba(147, 86, 220, 1);
+        }
+
+        &__txt {
+          h4 {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 54px 18px 66px;
+
+  &__restaurant__group {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    &__card {
+      &__img {
+        position: relative;
+        width: 100%;
+
+        & img {
+          height: 174px;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        &__txt {
+          position: absolute;
+          top: 13px;
+          right: 12px;
+          padding: 7px 9px;
+          border-radius: 2px;
+          background: #99e2d0;
+
+          & h5 {
+            margin: 0;
+            padding: 0;
+            color: rgba(0, 135, 102, 1);
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      &__container {
+        display: flex;
+        justify-content: space-between;
+
+        &__like {
+          width: 22px;
+          cursor: pointer;
+
+          svg {
+            cursor: pointer;
+            stroke: black;
+          }
+
+          svg:hover {
+            fill: red;
+          }
+
+          svg:active {
+            background-color: red;
+          }
+        }
+      }
     }
   }
 }

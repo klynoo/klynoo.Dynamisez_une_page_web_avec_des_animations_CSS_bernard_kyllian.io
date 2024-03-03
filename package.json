@@ -4,8 +4,7 @@
   "version": "1.0.0",
   "main": "restaurantAcceuil.js",
   "scripts": {
-    "scss": "sass --watch scss/:css/",
-    "start": "nodemon -e sass -x \"npm run scss\""
+    "start": "nodemon --watch scss/ --ext scss --exec \"sass scss/main.scss css/style.css\""
   },
   "author": "",
   "license": "ISC",

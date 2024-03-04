@@ -1,3 +1,7 @@
+@import "../base/normalize";
 @import "../layout/header";
+@import "../layout/homes/address";
+@import "../layout/homes/hero";
+@import "../layout/homes/description";
 
 @include headerBase;

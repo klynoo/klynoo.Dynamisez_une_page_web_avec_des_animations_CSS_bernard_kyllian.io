@@ -1,0 +1,21 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.address {
+  @include all-center;
+  gap: 17px;
+  padding: 15px 0px;
+  background: var(--Grey-2, #eaeaea);
+  box-shadow: inset 0 8px 4px -5px rgba(0, 0, 0, 0.15);
+
+  & i {
+    color: $color-grey;
+  }
+
+  & h4 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: $color-grey;
+  }
+}

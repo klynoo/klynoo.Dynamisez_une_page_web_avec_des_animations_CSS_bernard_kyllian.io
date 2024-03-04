@@ -1,0 +1,49 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+.description {
+  @include all-center;
+  flex-direction: column;
+
+  & h1 {
+    width: 80%;
+    padding: 50px 0px 35px;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 80%;
+
+    &__card {
+      @include all-center;
+
+      &__number {
+        @include all-center;
+
+        & span {
+          @include all-center;
+          position: relative;
+          left: 10px;
+          background-color: $color-purple;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          color: white;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+
+      &__container {
+        display: flex;
+        gap: 27px;
+        width: 100%;
+        padding: 30px 34px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}

@@ -9,11 +9,11 @@
 }
 
 @mixin like {
-  position: relative;
-  height: 22px;
-  width: 22px;
-  top: 25px;
-  right: 25px;
+  // position: relative;
+  // height: 22px;
+  // width: 22px;
+  // top: 25px;
+  // right: 25px;
 
   & svg {
     position: absolute;

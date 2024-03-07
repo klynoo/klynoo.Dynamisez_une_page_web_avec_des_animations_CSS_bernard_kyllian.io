@@ -216,13 +216,6 @@ ol {
   font-weight: 300;
   line-height: normal;
 }
-.nav__group__card__container__like {
-  position: relative;
-  height: 22px;
-  width: 22px;
-  top: 25px;
-  right: 25px;
-}
 .nav__group__card__container__like svg {
   position: absolute;
   width: 100%;
@@ -287,48 +280,210 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-.header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
-  padding: 14px 0px 13px;
+  padding: 23px 0px 13px;
 }
-.header__logo img {
+.header img {
   width: 200px;
   height: auto;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.figure {
   margin: 0;
-  padding: 14px 0px 13px;
+  width: 100%;
 }
-.header__logo img {
-  width: 200px;
-  height: auto;
+.figure img {
+  width: 100%;
 }
 
-.header {
+.chek {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 100%;
+  border-radius: 0px 20px 20px 0px;
+  background-color: rgb(153, 226, 208);
+  transition: width 0.5s ease;
+}
+.chek svg {
+  display: none;
+  background-color: aliceblue;
+  border-radius: 50%;
+  width: 15px;
+  padding: 3px;
+}
+.chek svg path {
+  fill: rgb(153, 226, 208);
+}
+
+.main__container__group:hover .chek {
+  width: 60px;
+}
+
+.main__container__group:hover svg {
+  display: block;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
   position: relative;
+  top: -35px;
+  padding: 35px 15px 0px;
+  border-radius: 25px 25px 0px 0px;
+  background-color: rgb(246, 246, 246);
 }
-.header__logo:before {
-  content: url(/assets/images/png/GoBack.png);
+.main__header {
+  display: flex;
+  justify-content: space-between;
+}
+.main__header h1 {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+}
+.main__header__like {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  top: 8px;
+  right: 26px;
+}
+.main__header__like svg {
   position: absolute;
-  top: 14px;
+  width: 100%;
+  height: 100%;
+}
+.main__header__like svg .like {
+  fill: transparent;
+}
+.main__header__like svg .like:hover {
+  fill: red;
+}
+.main__container__title ::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: rgb(153, 226, 208);
+}
+.main__container__title h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.main__container__group {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 10px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 72px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.main__container__group__txt {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  gap: 5px;
+}
+.main__container__group__txt h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.main__container__group__txt h4 {
+  font-size: 15.043px;
+  font-weight: 300;
+}
+.main__container__group__end {
+  position: relative;
+  top: 12px;
+  right: 15px;
+}
+.main__container__group__end h5 {
+  color: rgb(53, 53, 53);
+  font-size: 15.043px;
+  font-weight: 700;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px 0px 22px;
+  background-color: rgb(53, 53, 53);
+  color: rgb(255, 255, 255);
+  padding-left: 25px;
+}
+.footer h3 {
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__shareholder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__shareholder__container {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.footer__shareholder__container h4 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__link h5 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 23px 0px 13px;
+}
+.header img {
+  width: 200px;
+  height: auto;
+}
+
+.header {
+  flex-direction: column;
+}
+.header a {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 17px;
   left: 17px;
-  height: 30px;
-  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

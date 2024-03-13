@@ -1,3 +1,18 @@
+@import "utils/mixins";
+@import "utils/variables";
+
+@import "components/animation";
 @import "base/normalize";
+@import "components/animation";
+
+@import "components/button";
+@import "components/badges";
+@import "components/cards";
+@import "base/typography";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/menu/figure";
+@import "layout/menu/main";
+
 @import "pages/home";
 @import "pages/menu";

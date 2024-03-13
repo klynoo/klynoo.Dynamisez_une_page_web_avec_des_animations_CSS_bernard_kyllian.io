@@ -1,29 +1,17 @@
-@import "../utils/mixins";
-
-@mixin headerBase {
-  .header {
-    @include all-center;
-    margin: 0;
-    padding: 23px 0px 13px;
-
-    img {
-      width: 200px;
-      height: auto;
-    }
-  }
+.header-home {
+  @include header-style;
 }
 
-@mixin header-Arrow {
-  @include headerBase;
+.header-menu {
+  @include header-style;
 
-  .header {
-    flex-direction: column;
-    & a {
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      top: 17px;
-      left: 17px;
-    }
+  & a {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 17px;
+    left: 17px;
   }
 }

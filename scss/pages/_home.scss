@@ -1,9 +1,140 @@
-@import "../base/normalize";
-@import "../layout/header";
-@import "../layout/homes/address";
-@import "../layout/homes/hero";
-@import "../layout/homes/description";
-@import "../layout/homes/nav";
-@import "../layout/footer";
+.address {
+  @include all-center;
+  gap: 17px;
+  padding: 15px 0px;
+  background-color: $color-background-darkened;
+  box-shadow: inset 0 8px 4px -5px rgba(0, 0, 0, 0.15);
 
-@include headerBase;
+  & i {
+    color: $color-txt-secondary;
+  }
+}
+
+.hero {
+  @include all-center;
+  flex-direction: column;
+  gap: 27px;
+  text-align: center;
+  padding: 45px 0px 60px;
+  background-color: $color-background-darkened;
+  box-shadow: inset 0 10px 8px -5px rgba(0, 0, 0, 0.3);
+
+  & h2 {
+    padding: 0px 65px;
+  }
+}
+
+.description {
+  @include all-center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 0px 70px;
+
+  & h2 {
+    width: 90%;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+
+    &__card {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      &__container {
+        @include all-center;
+        gap: 25px;
+
+        & i {
+          color: rgba(126, 126, 126, 1);
+        }
+
+        & .i--color {
+          color: $color-primary;
+        }
+      }
+
+      &__number {
+        position: relative;
+        left: -10px;
+
+        & span {
+          @include all-center;
+        }
+      }
+    }
+  }
+}
+
+.section {
+  @include all-center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 55px 0px 65px;
+  background-color: $color-background-darkened;
+
+  & h2 {
+    width: 90%;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+
+    &__card {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+
+      &__img {
+        position: relative;
+        width: 100%;
+        & img {
+          height: 175px;
+          width: 100%;
+          border-radius: 15px 15px 0px 0px;
+          object-fit: cover;
+        }
+      }
+
+      &__container {
+        display: flex;
+        justify-content: space-between;
+        height: 77px;
+
+        &__txt {
+          display: flex;
+          gap: 5px;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 13px;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: 1440px) {
+  .description__group {
+    flex-direction: row;
+  }
+
+  .section__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (min-width: 767.98px) {
+}

@@ -1,31 +1,24 @@
-@mixin badge-purple {
-  background-color: $color-purple;
+//badge "nouveau"
+.badge-number {
+  @include heading-style(14px, $font-weight-normal, null, $color-txt-tertiaire);
+  background-color: $color-primary;
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  color: white;
-  font-size: 15px;
-  font-weight: 500;
 }
 
-@mixin like {
-  // position: relative;
-  // height: 22px;
-  // width: 22px;
-  // top: 25px;
-  // right: 25px;
-
-  & svg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-    .like {
-      fill: transparent;
-    }
-
-    .like:hover {
-      fill: red;
-    }
-  }
+.icon--new::after {
+  content: "Nouveau";
+  position: absolute;
+  @include all-center;
+  padding: 0px 10px;
+  top: 10px;
+  right: 10px;
+  @include cards-style(2px, $color-background-subtil, null, 30px);
+  @include heading-style(
+    14px,
+    $font-weight-normal,
+    null,
+    $color-txt-quaternary
+  );
 }

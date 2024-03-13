@@ -1,6 +1,51 @@
 $color-grey: rgba(53, 53, 53, 1);
 $color-purple: rgba(147, 86, 220, 1);
 $color-like: rgba(147, 86, 220, 1);
+$color-gradient: linear-gradient(0deg, #9356dc -11.44%, #ff79da 90.93%);
 $color-grey-background: rgba(246, 246, 246, 1);
 $color-card-background: rgba(255, 255, 255, 1);
 $color-line-menu: rgba(153, 226, 208, 1);
+
+//border-radius
+$border-radius-small: 15px;
+$border-radius-normal: 20px;
+$border-radius-large: 25px;
+
+//box shadow
+$box-shadow-lightning: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+$box-shadow-normal: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+$box-shadow-darkened: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+//background color
+$color-background-lightning: rgba(255, 255, 255, 1);
+$color-background-darkened: rgba(246, 246, 246, 1);
+$color-background-subtil: rgba(153, 226, 208, 1);
+
+//general color
+$color-primary: rgba(147, 86, 220, 1);
+
+// color de texte
+$color-txt-primary: rgba(0, 0, 0, 1);
+$color-txt-secondary: rgba(53, 53, 53, 1);
+$color-txt-tertiaire: rgba(255, 255, 255, 1);
+$color-txt-quaternary: rgba(0, 135, 102, 1);
+
+// polices
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Shrikhand", sans-serif;
+
+// size
+$font-size-small: 1rem; // 16px
+$font-size-base: 1.125rem; // 18px
+$font-size-large: 1.5rem; // 24px
+
+// weight
+$font-weight-fine: 300;
+$font-weight-normal: 500;
+$font-weight-bold: 700;
+
+//style
+$font-style-normal: normal;
+
+//height
+$line-height-normal: normal;

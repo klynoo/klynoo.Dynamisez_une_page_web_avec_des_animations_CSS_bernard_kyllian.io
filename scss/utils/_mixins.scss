@@ -3,3 +3,49 @@
   justify-content: center;
   align-items: center;
 }
+//mixin text
+@mixin heading-style(
+  $size,
+  $weight: null,
+  $family: null,
+  $color: null,
+  $style: null,
+  $height: null
+) {
+  $weight: if($weight == null, $font-weight-fine, $weight);
+  $family: if($family == null, $font-primary, $family);
+  $color: if($color == null, $color-txt-primary, $color);
+  $style: if($style == null, $font-style-normal, $style);
+  $height: if($height == null, $line-height-normal, $height);
+
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+  color: $color;
+  font-style: $style;
+  line-height: $height;
+}
+
+@mixin cards-style($radius: null, $color: null, $shadow: null, $height: null) {
+  $radius: if($radius == null, $border-radius-small, $radius);
+  $color: if($color == null, $color-background-lightning, $color);
+  $shadow: if($shadow == null, $box-shadow-normal, $shadow);
+  $height: if($height == null, 72px, $height);
+
+  border-radius: $radius;
+  background-color: $color;
+  box-shadow: $shadow;
+  height: $height;
+}
+
+//mixin header
+@mixin header-style {
+  @include all-center;
+  margin: 0;
+  padding: 23px 0px 13px;
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+}

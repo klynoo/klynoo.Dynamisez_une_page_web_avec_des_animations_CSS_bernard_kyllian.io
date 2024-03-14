@@ -1,3 +1,34 @@
+//animation
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.appearance-1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: appearance 1s ease forwards;
+}
+
+.appearance-2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: appearance 1.5s ease forwards;
+}
+
+.appearance-3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: appearance 2s ease forwards;
+}
+
+//animation cards menu
 .chek {
   @include all-center;
   width: 0;
@@ -19,10 +50,10 @@
   }
 }
 
-.main__container__group:hover .chek {
+.sectionMenu__container__group__card:hover .chek {
   width: 60px;
 }
 
-.main__container__group:hover svg {
+.sectionMenu__container__group__card:hover svg {
   display: block;
 }

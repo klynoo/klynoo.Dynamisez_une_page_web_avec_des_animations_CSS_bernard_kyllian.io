@@ -19,11 +19,19 @@ h2 {
 }
 
 .h3_home {
+  @include heading-style($font-size-small, null);
+}
+
+.h3_menu {
   @include heading-style($font-size-small, $font-weight-normal);
 }
 
 .h4_home {
   @include heading-style(18px, $font-weight-bold);
+}
+
+.h4_menu {
+  @include heading-style(18px, $font-weight-normal);
 }
 
 .p_hero {
@@ -32,6 +40,14 @@ h2 {
 
 .p_section {
   @include heading-style(17px);
+}
+
+.p_menu {
+  @include heading-style(15px);
+}
+
+.span_price {
+  @include heading-style(15px, $font-weight-bold, null, $color-txt-secondary);
 }
 
 .footer-title {

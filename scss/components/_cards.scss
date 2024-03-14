@@ -5,3 +5,11 @@
 .card-home-second {
   @include cards-style(null, null, $box-shadow-lightning, 250px);
 }
+
+.card-menu-shadow {
+  @include cards-style(null, null, $box-shadow-lightning, null);
+}
+
+.card-menu-noShadow {
+  @include cards-style(null, null, 0px 0px 0px 0px rgba(0, 0, 0, 0), null);
+}

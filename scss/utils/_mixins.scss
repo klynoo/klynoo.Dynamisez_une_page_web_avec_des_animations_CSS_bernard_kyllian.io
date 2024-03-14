@@ -42,7 +42,7 @@
 @mixin header-style {
   @include all-center;
   margin: 0;
-  padding: 23px 0px 13px;
+  height: 63px;
 
   img {
     width: 200px;

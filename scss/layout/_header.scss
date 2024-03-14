@@ -6,12 +6,20 @@
   @include header-style;
 
   & a {
+    display: flex;
+    align-items: center;
     width: 30px;
     height: 30px;
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 17px;
     left: 17px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-home,
+  .header-menu {
+    height: 96px;
   }
 }

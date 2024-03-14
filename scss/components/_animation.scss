@@ -2,30 +2,27 @@
 @keyframes appearance {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-200px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
 .appearance-1 {
   opacity: 0;
-  transform: translateY(20px);
-  animation: appearance 1s ease forwards;
+  animation: appearance 1s ease-out forwards;
 }
 
 .appearance-2 {
   opacity: 0;
-  transform: translateY(20px);
-  animation: appearance 1.5s ease forwards;
+  animation: appearance 1.5s ease-out forwards;
 }
 
 .appearance-3 {
   opacity: 0;
-  transform: translateY(20px);
-  animation: appearance 2s ease forwards;
+  animation: appearance 2s ease-out forwards;
 }
 
 //animation cards menu
@@ -34,18 +31,18 @@
   width: 0;
   height: 100%;
   border-radius: 0px 20px 20px 0px;
-  background-color: $color-line-menu;
+  background-color: $color-background-subtil;
   transition: width 0.5s ease;
 
   & svg {
     display: none;
-    background-color: aliceblue;
+    background-color: $color-background-lightning;
     border-radius: 50%;
     width: 15px;
     padding: 3px;
 
     & path {
-      fill: $color-line-menu;
+      fill: $color-background-subtil;
     }
   }
 }

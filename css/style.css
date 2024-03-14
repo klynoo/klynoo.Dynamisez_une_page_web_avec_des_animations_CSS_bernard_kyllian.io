@@ -132,29 +132,26 @@ a {
 @keyframes appearance {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-200px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 .appearance-1 {
   opacity: 0;
-  transform: translateY(20px);
-  animation: appearance 1s ease forwards;
+  animation: appearance 1s ease-out forwards;
 }
 
 .appearance-2 {
   opacity: 0;
-  transform: translateY(20px);
-  animation: appearance 1.5s ease forwards;
+  animation: appearance 1.5s ease-out forwards;
 }
 
 .appearance-3 {
   opacity: 0;
-  transform: translateY(20px);
-  animation: appearance 2s ease forwards;
+  animation: appearance 2s ease-out forwards;
 }
 
 .chek {
@@ -169,7 +166,7 @@ a {
 }
 .chek svg {
   display: none;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   width: 15px;
   padding: 3px;
@@ -483,12 +480,31 @@ h2 {
   gap: 10px;
 }
 
+@media (min-width: 1440px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 16px;
+    height: 114px;
+    padding: 0px 25px;
+  }
+  .footer h4 {
+    padding: 0px 35px;
+  }
+  .footer__shareholder {
+    flex-direction: row;
+  }
+  .footer__link {
+    flex-direction: row;
+  }
+}
 .header-home {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 23px 0px 13px;
+  height: 63px;
 }
 .header-home img {
   width: 200px;
@@ -500,22 +516,29 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 23px 0px 13px;
+  height: 63px;
 }
 .header-menu img {
   width: 200px;
   height: auto;
 }
 .header-menu a {
+  display: flex;
+  align-items: center;
   width: 30px;
   height: 30px;
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 17px;
   left: 17px;
 }
 
+@media (min-width: 1440px) {
+  .header-home,
+  .header-menu {
+    height: 96px;
+  }
+}
 .address {
   display: flex;
   justify-content: center;
@@ -659,9 +682,11 @@ h2 {
 .sectionMenu {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   position: relative;
-  top: -35px;
+  gap: 40px;
+  margin: auto;
+  max-width: 1055px;
+  margin-top: -35px;
   padding: 35px 15px 0px;
   border-radius: 25px 25px 0px 0px;
   background-color: rgb(246, 246, 246);
@@ -698,6 +723,7 @@ h2 {
 .sectionMenu__container__group__card__txt {
   display: flex;
   flex: auto;
+  gap: 5px;
   flex-direction: column;
   padding-left: 15px;
 }
@@ -705,6 +731,14 @@ h2 {
   position: relative;
   right: 15px;
   top: 15px;
+}
+
+.btn_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  background-color: rgb(246, 246, 246);
 }
 
 /*# sourceMappingURL=style.css.map */

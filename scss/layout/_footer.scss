@@ -33,11 +33,11 @@
 @media (min-width: 1440px) {
   .footer {
     display: flex;
-    align-items: center;
+    align-items: end;
     flex-direction: row-reverse;
     gap: 16px;
-    height: 114px;
-    padding: 0px 25px;
+    height: 84px;
+    padding: 0px 25px 30px 25px;
 
     & h4 {
       padding: 0px 35px;

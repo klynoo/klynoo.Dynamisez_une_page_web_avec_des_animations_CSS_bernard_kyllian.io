@@ -117,6 +117,12 @@
           justify-content: center;
           padding-left: 13px;
         }
+
+        &__like {
+          position: relative;
+          right: 25px;
+          top: 25px;
+        }
       }
     }
   }
@@ -128,7 +134,7 @@
     flex-direction: row;
   }
 
-  .section__group {
+  .sectionHome__group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;

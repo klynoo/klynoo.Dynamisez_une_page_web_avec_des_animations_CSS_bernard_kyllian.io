@@ -74,3 +74,17 @@
   padding: 40px 0px;
   background-color: $color-background-darkened;
 }
+
+@media (min-width: 1440px) {
+  .sectionMenu__header {
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .sectionMenu__header__like {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}

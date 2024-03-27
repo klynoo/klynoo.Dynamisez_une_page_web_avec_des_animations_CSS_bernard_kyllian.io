@@ -127,6 +127,11 @@ ol {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 @keyframes appearance {
@@ -154,33 +159,28 @@ a {
   animation: appearance 2s ease-out forwards;
 }
 
-.chek {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0;
-  height: 100%;
-  border-radius: 0px 20px 20px 0px;
-  background-color: rgb(153, 226, 208);
-  transition: width 0.5s ease;
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
 }
-.chek svg {
-  display: none;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  width: 15px;
-  padding: 3px;
+@keyframes slideOut {
+  0% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
-.chek svg path {
-  fill: rgb(153, 226, 208);
-}
-
 .sectionMenu__container__group__card:hover .chek {
-  width: 60px;
+  animation: slide 0.5s ease-out forwards;
 }
 
-.sectionMenu__container__group__card:hover svg {
-  display: block;
+.sectionMenu__container__group__card:not(:hover) .chek {
+  animation: slideOut 0.5s ease-out forwards;
 }
 
 .button--primary {
@@ -192,7 +192,7 @@ a {
   line-height: normal;
   cursor: pointer;
   border: none;
-  padding: 13px 19px;
+  padding: 16px 23px;
   border-radius: 25px;
   background: linear-gradient(0deg, #9356dc -11.44%, #ff79da 90.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -210,6 +210,7 @@ a {
   width: 24px;
   height: 24px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btn-heart--outline {
@@ -353,8 +354,8 @@ h2 {
 }
 
 .h3_home {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: rgb(0, 0, 0);
   font-style: normal;
@@ -545,11 +546,14 @@ h2 {
   align-items: center;
   gap: 17px;
   padding: 15px 0px;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(234, 234, 234);
   box-shadow: inset 0 8px 4px -5px rgba(0, 0, 0, 0.15);
 }
 .address i {
   color: rgb(53, 53, 53);
+}
+.address input {
+  background-color: rgb(234, 234, 234);
 }
 
 .hero {
@@ -604,7 +608,7 @@ h2 {
 }
 .description__group__card__number {
   position: relative;
-  left: -10px;
+  left: -12px;
 }
 .description__group__card__number span {
   display: flex;
@@ -676,6 +680,14 @@ h2 {
   }
 }
 /* Small devices (phones, less than 768px) */
+@media (min-width: 767.98px) {
+  .address {
+    box-shadow: none;
+  }
+  .hero {
+    box-shadow: none;
+  }
+}
 .figure {
   margin: 0;
   width: 100%;
@@ -688,6 +700,7 @@ h2 {
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
   gap: 40px;
   margin: auto;
   max-width: 1055px;
@@ -699,6 +712,8 @@ h2 {
 .sectionMenu__header {
   display: flex;
   justify-content: space-between;
+  max-width: 635px;
+  width: 100%;
 }
 .sectionMenu__header__like {
   position: relative;
@@ -709,9 +724,8 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-.sectionMenu__container__title {
-  padding-left: 15px;
+  max-width: 635px;
+  width: 100%;
 }
 .sectionMenu__container__group {
   display: flex;
@@ -734,16 +748,43 @@ h2 {
 }
 .sectionMenu__container__group__card__price {
   position: relative;
-  right: 15px;
   top: 15px;
+  right: -45px;
+}
+.sectionMenu__container__group__card__chek {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  right: -60px;
+  width: 60px;
+  height: 100%;
+  background-color: rgb(153, 226, 208);
+}
+.sectionMenu__container__group__card__chek svg {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 15px;
+  padding: 3px;
+}
+.sectionMenu__container__group__card__chek svg path {
+  fill: rgb(153, 226, 208);
 }
 
-.btn_menu {
+.btn__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__menu__container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0px;
   background-color: rgb(246, 246, 246);
+  width: 100%;
+  max-width: 1085px;
 }
 
 @media (min-width: 1440px) {

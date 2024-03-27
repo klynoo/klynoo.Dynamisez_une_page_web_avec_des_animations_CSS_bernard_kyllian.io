@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
   gap: 40px;
   margin: auto;
   max-width: 1055px;
@@ -22,6 +23,8 @@
   &__header {
     display: flex;
     justify-content: space-between;
+    max-width: 635px;
+    width: 100%;
 
     &__like {
       position: relative;
@@ -34,10 +37,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-
-    &__title {
-      padding-left: 15px;
-    }
+    max-width: 635px;
+    width: 100%;
 
     &__group {
       display: flex;
@@ -61,18 +62,45 @@
 
         &__price {
           position: relative;
-          right: 15px;
           top: 15px;
+          right: -45px;
+        }
+
+        &__chek {
+          @include all-center;
+          overflow: hidden;
+          position: relative;
+          right: -60px;
+          width: 60px;
+          height: 100%;
+          background-color: $color-background-subtil;
+
+          & svg {
+            background-color: $color-background-lightning;
+            border-radius: 50%;
+            width: 15px;
+            padding: 3px;
+
+            & path {
+              fill: $color-background-subtil;
+            }
+          }
         }
       }
     }
   }
 }
 
-.btn_menu {
+.btn__menu {
   @include all-center;
-  padding: 40px 0px;
-  background-color: $color-background-darkened;
+
+  &__container {
+    @include all-center;
+    padding: 40px 0px;
+    background-color: $color-background-darkened;
+    width: 100%;
+    max-width: 1085px;
+  }
 }
 
 @media (min-width: 1440px) {

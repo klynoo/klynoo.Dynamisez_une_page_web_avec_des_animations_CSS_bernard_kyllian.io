@@ -8,7 +8,7 @@
   );
   cursor: pointer;
   border: none;
-  padding: 13px 19px;
+  padding: 16px 23px;
   border-radius: $border-radius-large;
   background: $color-gradient;
   box-shadow: $box-shadow-darkened;
@@ -30,6 +30,7 @@
   width: 24px;
   height: 24px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btn-heart--outline {

@@ -19,7 +19,7 @@ h2 {
 }
 
 .h3_home {
-  @include heading-style($font-size-small, null);
+  @include heading-style(16px, $font-weight-normal);
 }
 
 .h3_menu {

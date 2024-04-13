@@ -58,6 +58,9 @@
           gap: 5px;
           flex-direction: column;
           padding-left: 15px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
 
         &__price {
@@ -93,11 +96,12 @@
 
 .btn__menu {
   @include all-center;
+  padding: 40px 0px;
+  background-color: $color-background-darkened;
+
 
   &__container {
     @include all-center;
-    padding: 40px 0px;
-    background-color: $color-background-darkened;
     width: 100%;
     max-width: 1085px;
   }

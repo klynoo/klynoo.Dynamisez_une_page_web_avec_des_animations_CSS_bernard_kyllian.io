@@ -745,6 +745,9 @@ h2 {
   gap: 5px;
   flex-direction: column;
   padding-left: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .sectionMenu__container__group__card__price {
   position: relative;
@@ -776,13 +779,13 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 0px;
+  background-color: rgb(246, 246, 246);
 }
 .btn__menu__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0px;
-  background-color: rgb(246, 246, 246);
   width: 100%;
   max-width: 1085px;
 }

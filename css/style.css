@@ -201,7 +201,7 @@ button {
 }
 
 .button--primary:hover {
-  filter: brightness(120%);
+  filter: brightness(105%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.55);
 }
 
@@ -747,9 +747,14 @@ h2 {
   gap: 5px;
   flex-direction: column;
   padding-left: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.sectionMenu__container__group__card__txt h4,
+.sectionMenu__container__group__card__txt p {
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .sectionMenu__container__group__card__price {
   position: relative;

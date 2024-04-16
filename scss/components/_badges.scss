@@ -1,4 +1,3 @@
-//badge "nouveau"
 .badge-number {
   @include heading-style(14px, $font-weight-normal, null, $color-txt-tertiaire);
   background-color: $color-primary;
@@ -23,7 +22,7 @@
   );
 }
 
-//line h3 menu
+//line h2 menu
 .subtitile-line::after {
   content: "";
   display: block;

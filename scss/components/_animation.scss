@@ -29,18 +29,22 @@
 @keyframes slide {
   0% {
     transform: translateX(0px);
+    margin-left: 0px;
   }
   100% {
     transform: translateX(-60px);
+    margin-left: 60px;
   }
 }
 
 @keyframes slideOut {
   0% {
     transform: translateX(-60px);
+    margin-left: 60px;
   }
   100% {
     transform: translateX(0px);
+    margin-left: 0px;
   }
 }
 
